@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lugares historicos en Europa para ir</title>
+    <style>
+        body {
+        font-family: Montserrat;
+        margin: 0;
+        padding: 0;
+        background-color: #FAE5D3;
+    }
+
+    header {
+        background-color: #EDBB99;
+        color: #000000;
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #444
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+
+    }
+
+    article {
+        background-color: #FBEEE6;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    section {
+        background-color: #FDEDEC;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    aside {
+        background-color: #444
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+    }
+
+    footer {
+        background-color: #333
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    </style>
+     <script>
+         function guardarDatos() {
+            var nombre= document.getElementById("nombre").value;
+            var apellido= document.getElementById("apellido").value;
+            var ciudad= document.getElementById("ciudad").value;
+            var país= document.getElementById("país").value;
+         }
+
+         function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent (query);
+            window.location.href =url; 
+         }
+     </script>
+</head>
+<body>
+    <header>
+        <h1>Lugares historicos en Europa para ir</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Lugares.html">Lugares</a></li>
+            <li><a href="Opinion.html">Opinion</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Historia de Europa</h2>
+        <p>La historia de Europa es un viaje a través de milenios de desarrollo cultural, político y social. Comenzando con las civilizaciones clásicas griega y romana, que legaron una herencia duradera en filosofía, arte y política, Europa se convirtió en un crisol de culturas. La Edad Media presenció la formación de imperios como el Bizantino y el Carolingio, junto con la influencia dominante de la Iglesia Católica. El Renacimiento trajo un renacimiento cultural, seguido de la Reforma y las guerras religiosas que sacudieron el continente. La Ilustración promovió la razón y los derechos individuales, allanando el camino para la Revolución Francesa y las Guerras Napoleónicas. El siglo XX fue testigo de dos guerras mundiales devastadoras y la Guerra Fría, que dividió Europa en dos bloques. No obstante, el fin de la Guerra Fría llevó a la creación de la Unión Europea, un ambicioso proyecto de integración política y económica que buscaba promover la paz y la cooperación en la región. Hoy, Europa es una amalgama de naciones con diversas lenguas y culturas, marcada por una rica herencia histórica. Su historia ha influido en la política, la filosofía, la ciencia y la tecnología en todo el mundo, y continúa desempeñando un papel central en la arena global, tanto en la política como en la cultura.</p>
+    </article>
+    <section>
+        <h2>Importancia de conocer la historia de Europa</h2>
+        <p>Conocer la historia de Europa es fundamental por múltiples razones que trascienden el continente mismo. En primer lugar, Europa ha sido cuna de civilizaciones antiguas como la griega y la romana, cuyas contribuciones a la filosofía, el arte y la política siguen influyendo en todo el mundo. Además, la Edad Media europea fue una época de profundos cambios políticos y culturales, y la influencia de la Iglesia Católica en la vida cotidiana dejó una huella duradera. La historia europea también está marcada por eventos clave, como la Reforma Protestante, las Guerras Mundiales y la Guerra Fría, que tuvieron un impacto global y continúan afectando la geopolítica actual. La creación de la Unión Europea, por su parte, representa un esfuerzo de integración política y económica que ha promovido la paz en la región. Comprender la historia de Europa es esencial para apreciar la diversidad cultural y las complejas dinámicas políticas del continente. Además, permite extraer valiosas lecciones sobre cómo las sociedades han enfrentado desafíos, resuelto conflictos y evolucionado a lo largo del tiempo. En última instancia, la historia de Europa es parte integral de la historia global y proporciona una base sólida para comprender el mundo actual.</p>
+        <div class="form-container">
+            <h2>Guardar Datos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellido">Apellido::</label>
+                <input type="text" id="Apellido" name="Apellido"><br>
+                <label for="Ciudad">Ciudad:</label>
+                <input type="text" id="Ciudad" name="Ciudad"><br>
+                <label for="pais">Pais:</label>
+                <input type="text" id="pais" name="pais"><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="descarga1.jpg" alt="historia de Europa">
+            <img src="descarga2.jpg" alt="historia de Europa">
+        </div>
+    </section>
+    <aside>
+        <h3>Buscar en Google</h3>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Buscar en Google">
+            <input type="submit" value="Buscar">
+        </form>
+        <h3>Video de Youtube</h3>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/ckp1O_sQGgU?si=J2ZPmwVRcoqAI90b"></iframe>
+        <h3>Recursos Adicionales</h3>
+        <ul>
+            <li><a href="https://humanidades.com/europa/">Historia de Europa</a></li>
+        </ul>
+    </aside>
+    <footer>
+        &copy; 2023 Lugares Historicos de Europa para ir
+    </footer>
+</body>
+</html>
